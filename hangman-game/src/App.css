@@ -3,11 +3,18 @@
   background-color: #22513D;
   min-height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
-  height: 30vmin;
+  height: 35vmin;
   pointer-events: none;
+  /* display: flex; */
+  position: absolute;
+  bottom: 50px;
+  left: 700px;
+  transform: translateX(-50%);
 }
 
 .Title {
@@ -20,19 +27,34 @@
   padding-top: 20px;
   }
 
+.game-container {
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 450px;
+}
+
 .PlayerButtons {
-  padding-top: 10vw;
+  position: absolute;
+  top: 60px;
+  right: 170px;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 5vw;
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 25vw;
+  grid-column-gap: 25vw; */
   }
 
 .SingleplayerButton {
   width: 25vmin;
+  padding: 10px;
 }
 
 .MultiplayerButton {
   width: 25vmin;
+  padding: 10px;
 }
 
 .PlayButton {
