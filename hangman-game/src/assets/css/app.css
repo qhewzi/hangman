@@ -4,7 +4,57 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
+
+.App-logo {
+  height: 35vmin;
+  pointer-events: none;
+  /* display: flex; */
+  position: absolute;
+  bottom: 50px;
+  left: 700px;
+  transform: translateX(-50%);
+}
+
+.game-container {
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 450px;
+}
+
+.PlayerButtons {
+  position: absolute;
+  top: 60px;
+  right: 170px;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 5vw;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 25vw;
+  grid-column-gap: 25vw; */
+  }
+
+.SingleplayerButton {
+  width: 25vmin;
+  padding: 10px;
+}
+
+.MultiplayerButton {
+  width: 25vmin;
+  padding: 10px;
+}
   
+.PlayButton {
+  width: 18vmin;
+}
+
+.HelpButton {
+  width: 6vmin;
+  padding-right: 90vw;
+}
+
 body {
     background-color: #22513D;
     /* background-position: center center;
@@ -17,6 +67,8 @@ body {
     min-height:100vh;
     text-align:left;
     color:#FFF;
+    align-items: center;
+    justify-content: center;
 }
 
 #root {

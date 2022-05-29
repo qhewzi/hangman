@@ -8,6 +8,7 @@ import WebFont from 'webfontloader'
 
 import { GlobalProvider } from '../context/GlobalState'
 
+import Start from './Start'
 import Game from './Game'
 
 import '../assets/css/app.css'
@@ -32,7 +33,8 @@ const App = () => {
       <Router basename={process.env.PUBLIC_URL}>
         <main className="site-content">
           <Switch>
-            <Route exact path="/" component={Game} />
+            <Route exact path="/game" component={Game} />
+            <Route exact path="/" component={Start} />
           </Switch>
         </main>
       </Router>
