@@ -5,55 +5,60 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.App {
+  text-align: center;
+  background-color: #22513D;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.PlayButton {
+  width: 18vw;
+}
+
 .App-logo {
-  height: 35vmin;
-  pointer-events: none;
-  /* display: flex; */
+  height: 20vw;
+  width: 20vw;
   position: absolute;
-  bottom: 50px;
-  left: 700px;
-  transform: translateX(-50%);
+  left: 75vw;
+  bottom: 10vh;
 }
 
-.game-container {
-  padding: 20px 30px;
-  position: relative;
-  margin: auto;
-  height: 350px;
-  width: 450px;
-}
-
-.PlayerButtons {
-  position: absolute;
-  top: 60px;
-  right: 170px;
-  display: flex;
-  flex-direction: column;
-  /* padding-top: 5vw;
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 25vw;
-  grid-column-gap: 25vw; */
+@media (max-width: 821px) {
+  .App-logo {
+    height: 27vw;
+    width: 27vw;
+    position: absolute;
+    left: 70vw;
+    bottom: 31vh;
   }
 
-.SingleplayerButton {
-  width: 25vmin;
-  padding: 10px;
+  .PlayButton {
+    width: 23vw;
+  }
 }
 
-.MultiplayerButton {
-  width: 25vmin;
-  padding: 10px;
-}
-  
-.PlayButton {
-  width: 18vmin;
+@media (max-width: 400px) {
+  .App-logo {
+    height: 25vw;
+    width: 25vw;
+    position: absolute;
+    left: 70vw;
+    bottom: 38vh;
+  }
+
+  .PlayButton {
+    width: 24vw;
+  }
 }
 
-.HelpButton {
-  width: 6vmin;
-  padding-right: 90vw;
-}
+.Title {
+  font-family: 'Cabin Sketch';
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20vw;
+  }
 
 body {
     background-color: #22513D;
@@ -135,7 +140,6 @@ body {
     .container {
       width:98%;
     }
-  
   }
   
   h1 {

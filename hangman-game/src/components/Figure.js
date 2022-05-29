@@ -8,7 +8,7 @@ function Figure () {
     hidden: {rotate: -180},
     visible: {
       rotate: 0,
-      transition: {duration : 1}
+      transition: {duration : 1.5}
     }
   }
   const pathVariants = {
@@ -20,7 +20,7 @@ function Figure () {
       opacity: 1,
       pathLength: 1,
       transition: {
-        duration: 2,
+        duration: 1,
         ease: "easeInOut"
       }
     }
